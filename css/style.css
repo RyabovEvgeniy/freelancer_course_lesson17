@@ -24,6 +24,18 @@ body {
 	padding: 0px 15px;
 }
 
+@media (max-width: 1050px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		max-width: none;
+	}
+}
+
 /* ===== end container ===== */
 
 /* ===== main ===== */
@@ -39,51 +51,91 @@ body {
 	min-height: 94px;
 }
 
-.header__container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	padding: 26px 15px;
-}
-
-.header__logo {
-	margin: 0px 237px 0px 0px;
-	cursor: pointer;
-}
-
 .header__body {
 	display: flex;
-	column-gap: 30px;
-	margin: 0px 32px 0px 0px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 26px 0px;
 }
 
-.body-header {}
+@media (max-width: 740.98px) {
+	.header__body {
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 20px;
+		padding: 15px 0px;
+	}
+}
 
-.body-header__item {
+/* @media (max-width: 574px) {
+	.header__body {
+		row-gap: 10px;
+	}
+} */
+
+.header__logo {
+}
+.header__img {
+}
+.header__info {
+	display: flex;
+	column-gap: 32px;
+}
+
+@media (max-width: 830px) {
+	.header__info {
+		column-gap: 20px;
+	}
+}
+
+@media (max-width: 563px) {
+	.header__info {
+		column-gap: 10px;
+	}
+}
+
+@media (max-width: 574px) {
+	.header__info {
+		row-gap: 10px;
+	}
+}
+
+.info-header {
+}
+.info-header__item {
 	display: flex;
 	column-gap: 10px;
 }
 
-.body-header__image {
-	align-self: flex-start;
+@media (max-width: 767.98px) {
+	.info-header__item {
+		column-gap: 5px;
+	}
 }
 
-.body-header__box {
+.header__info {
+		column-gap: 20px;
+}
+
+.info-header__image {
+	align-self: flex-start;
+}
+.info-header__body {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 1.83;
 	letter-spacing: 0.15px;
 	color: #FFFFFF;
 }
+.info-header__body_medium {
+	font-weight: 500;
+}
+.info-header__boarging {
 
-.body-header__title {}
-
-.body-header__text {}
-
-.header__button {	
+}
+.header__button {
 	display: inline-flex;
 }
-
 .header__link {
 	background: #F2726F;
 	border-radius: 8px;
@@ -95,6 +147,14 @@ body {
 	color: #FFFFFF;
 	padding: 9px 34px;
 }
+
+@media (max-width: 830px) {
+	.header__link {
+		padding: 6px 20px;
+		align-self: center;
+	}
+}
+
 .header__link:hover {
 	color: #F2726F;
 	transition: 0.3s ease;
