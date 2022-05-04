@@ -1,0 +1,103 @@
+/* ===== wrapper ===== */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ===== end wrapper ===== */
+
+/* ===== body ===== */
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	background-color: #F5F5F5;
+}
+
+/* ===== end body ===== */
+
+/* ===== container ===== */
+[class*="__container"] {
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+/* ===== end container ===== */
+
+/* ===== main ===== */
+.main {
+	flex: 1 1 auto;
+}
+
+/* ===== end main ===== */
+
+/* ===== header ===== */
+.header {
+	background-color: #2bc0be;
+	min-height: 94px;
+}
+
+.header__container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 26px 0px;
+}
+
+.header__logo {
+	margin: 0px 237px 0px 0px;
+	cursor: pointer;
+}
+
+.header__body {
+	display: flex;
+	column-gap: 30px;
+	margin: 0px 32px 0px 0px;
+}
+
+.body-header {}
+
+.body-header__item {
+	display: flex;
+	column-gap: 10px;
+}
+
+.body-header__image {
+	align-self: flex-start;
+}
+
+.body-header__box {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.83;
+	letter-spacing: 0.15px;
+	color: #FFFFFF;
+}
+
+.body-header__title {}
+
+.body-header__text {}
+
+.header__button {	
+	display: inline-flex;
+}
+
+.header__link {
+	background: #F2726F;
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 9px 34px;
+}
+.header__link:hover {
+	color: #F2726F;
+	transition: 0.3s ease;
+	background-color: #fff;
+}
+/* ===== end header ===== */
